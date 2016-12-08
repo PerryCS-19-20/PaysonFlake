@@ -8,6 +8,8 @@
     <body>
 	<span id="homeSpan"> </span>
 	<script>
+		function toDo(){
+			
 		var span = document.getElementById("homeSpan");  
 
 		var bold = document.createElement("b");
@@ -15,16 +17,17 @@
 			
 
 		span.appendChild(bold);
+		}
 	</script>
-	    <textarea> rows= "1" cols= "80" id= "inputText"
-		    #text: Type List Items Here...
+	    <textarea rows= "1" cols= "80" id= "inputText">
+		  Type List Items Here...
 	    </textarea>
 	    <br>
-	    <button> onclick="toDo();"
-		    #text: Add Item
+	    <button onclick="toDo();">
+		    Add Item
 	    </button>
 		    
-	    <ul> id= "list"
+	    <ul id= "list">
 		    <li>user input</li>
 		    <li>user input</li>
 		    <li>user input</li>
