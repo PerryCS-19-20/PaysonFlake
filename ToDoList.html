@@ -10,13 +10,13 @@
 	<script>
 		function toDo(){
 			
-		var span = document.getElementById("homeSpan");  
+		var list = document.getElementById("list");  
 
-		var bold = document.createElement("b");
-		bold.textContent = ""
+		var li = document.createElement("li");
+		li.textContent = document.getElementById("inputText").value;
 			
 
-		span.appendChild(bold);
+		list.appendChild(li);
 		}
 	</script>
 	    <textarea rows= "1" cols= "80" id= "inputText">
