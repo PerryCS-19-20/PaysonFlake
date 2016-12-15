@@ -15,15 +15,13 @@
   </head>
   <body>
     <script>
-		function play(){
+		function play(cellid){
 			
-		var play = document.getElementById("play");  
+		var td = document.getElementById(cellid);  
 
-		var td = document.createElement("td");
-		td.textContent = document.getElementById("inputText").value;
-			
-
-		list.appendChild(td);
+		
+		td.textContent = "x";
+		
 		}
 	</script>
 	  
