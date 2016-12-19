@@ -15,12 +15,18 @@
   </head>
   <body>
     <script>
-		function play(cellid){
+        var player = "X";
+    function play(cellid){
 			
 		var td = document.getElementById(cellid);  
 
 		
-		td.textContent = "player";
+		td.textContent = player;
+                if(player == "X"){
+                    player = "O";
+                }else{
+                    player = "X";
+                }
 		
 		}
 	</script>
